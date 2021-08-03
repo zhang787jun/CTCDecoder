@@ -6,7 +6,7 @@ class LanguageModel:
 
         # compute unigrams
         self._unigram = {c: 0 for c in chars}
-        for c in chars:
+        for c in txt:
             # ignore unknown chars
             if c not in self._unigram:
                 continue
